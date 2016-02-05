@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+	<!-- song list -->
+
+	<TextView android:id="@+id/cur_play"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/currently_playing"
+		android:textSize="20sp"
+		android:textStyle="bold" />
+
+	<TextView
+		android:id="@+id/current_title"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="18sp"
+		android:textStyle="bold" />
+
+	<TextView
+		android:id="@+id/current_artist"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textColor="#FF000000"
+		android:textSize="16sp" />
+	
+	<ListView
+		android:id="@+id/song_list"
+		android:layout_weight="1"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp" >
+	</ListView>
+
+</LinearLayout>
